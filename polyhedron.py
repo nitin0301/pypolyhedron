@@ -14,7 +14,7 @@ NO WARRANTY IS EXPRESSED OR IMPLIED.  USE AT YOUR OWN RISK.
 Pearu Peterson
 """
 
-import _cdd
+from . import _cdd
 import pprint
 
 class Polyhedron:
@@ -90,10 +90,10 @@ class Vrep(Polyhedron):
     
 if __name__ == "__main__":
     p = Hrep([[0,1],[1,0],[-1,-1],[0,-1]],[1,2,0,0])
-    print p
+    print(p)
     p = Vrep([[0,1],[1,0],[-1,-1],[0,-1]])
-    print p
+    print(p)
     p = Hrep([[0,1],[1,0],[0,-1]],[1,2,0.1])
-    print p
+    print(p)
     p = Hrep([[1,0],[0,-1]],[2,0.1],[0])
-    print p
+    print(p)
